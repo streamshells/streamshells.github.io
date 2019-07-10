@@ -13,11 +13,10 @@
 item.getItem.ss
 
 ```
-map int 
 map shop.getShop
 flatmap items
 filter price > 1000
-map name += " sale"
+map name += "(sale)"
 ```
 
 http://xxx/xxx.item.getItem.ss/1

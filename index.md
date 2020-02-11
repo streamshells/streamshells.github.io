@@ -12,13 +12,10 @@
 ## 示例
 
 ```
-map shop.getShop
-flatmap items
-filter price > 1000
-map name += "(sale)"
+flatmap shopId => itemService.findRecommendItemsByShopId(shopId)
+filter item => item.price < 100
+map item => item.name += "(sale)"
 ```
-
-http://xxx/xxx.item.getItem.ss/1
 
 ### 注释
 
